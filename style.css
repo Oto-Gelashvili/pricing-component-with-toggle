@@ -1,0 +1,228 @@
+.font-family{
+  font-family: "Montserrat", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+}
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #edf0f6;
+  background-image: url(images/bg-top.svg),url(images/bg-bottom.svg);
+  background-repeat: no-repeat;
+  background-position: top right,bottom left;
+  padding: 2rem;
+  gap:3rem;
+}
+.pricing{
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  justify-content: center;
+}
+h1{
+  color: #6D6D7E;
+  font-size: 3rem;
+}
+.pricing-plan{
+  display: flex;
+  gap: 2.4rem;
+  align-items: center;
+}
+.pricing-plan p{
+  font-size: 1.5rem;
+  color: #CACBD1;
+}
+.toggle{
+  background-color: #979AE8;
+  width: 5.6rem;
+  height: 3.2rem;
+  border-radius: 50rem;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  padding: 5px;
+  transition: 0.5s;
+}
+.circle{
+  width: 45%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #fff;
+}
+.container{
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.type-container{
+  flex-grow: 1;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2.4rem;
+  padding: 3.2rem;
+  border-radius: 1rem;
+  box-shadow:  #8A8992 1px 1px 30px ;
+}
+.type-title{
+  font-size: 1.8rem;
+  color: #8A8992;
+}
+.type-price{
+  color: #4D4E61;
+  font-size: 7rem;
+}
+ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: #A3A2A8;
+  width: 100%;
+  text-align: center;
+}
+li{
+  border-bottom: 1px solid #cfd1d6;
+  padding: 2rem;
+  width: 100%;
+}
+li:first-of-type{
+  border-top: 1px solid #cfd1d6;
+}
+button{
+  font-size: 1.5rem;
+  background-color: #7175DF;
+  border-radius: 1rem;
+  width: 100%;
+  padding: 1.6rem;
+  color: #fff;
+  border: none;
+  letter-spacing: 2px;
+  font-family: inherit;
+  font-weight: 600;
+  transition: 0.4s;
+  }
+  .pro{
+    background-color: #7175DF;
+    padding-block: 5.2rem;
+  }
+  .pro button{
+    background-color: #fff;
+    color: #7175DF;
+  }
+  .pro ul{
+    color: #fff;
+  }
+  .pro .type-title{
+    color: #fff;
+  }
+  .pro .type-price{
+    color: #fff;
+
+  }
+  button:hover{
+    cursor: pointer;
+    background-color: #fff;
+    color:#7175DF;
+    border: #7175DF 1px solid;
+  }
+  .pro button:hover{
+    cursor: pointer;
+    background-color: #7175DF;
+    color:#fff;
+    border: #fff 1px solid;
+  }
+  .toggle:hover{
+    background-color: rgb(151, 154, 232, 0.65);
+    cursor: pointer;
+  }
+  @media (max-width:1024px) {
+    body{
+      padding: 4rem;
+      gap:4rem;
+    }
+    .container{
+      width: 80%;
+      display: flex;
+      flex-direction: column;
+      gap: 4rem;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+  @media (min-width:475px) {
+    .type-container{
+      width: 100%;
+    }
+  }
+
+  
+  @media (min-width:1800px) {
+    h1{
+      font-size: 6rem;
+    }
+    .pricing-plan p{
+      font-size: 3rem;
+    }
+    .toggle{
+      width: 11.2rem;
+      height: 6.4em;
+      border-radius: 100rem;
+      padding: 10px;
+    }
+    .type-container{
+      gap: 4.8rem;
+      padding: 6.4rem;
+      border-radius: 2rem;
+    }
+    .type-title{
+      font-size: 3.6rem;
+    }
+    .type-price{
+      color: #4D4E61;
+    }
+    ul{
+      font-size: 3rem;
+    }
+    li{
+      border-bottom: 2px solid #cfd1d6;
+      padding: 4rem;
+    }
+    li:first-of-type{
+      border-top: 2px solid #cfd1d6;
+    }
+    button{
+      font-size: 3rem;
+      border-radius: 2rem;
+      padding: 3.2rem;
+      letter-spacing: 3px;
+      }
+      .pro{
+        padding-block: 8.4rem;
+      }
+      button:hover{
+        border: #7175DF 2px solid;
+      }
+      .pro button:hover{
+        border: #fff 2px solid;
+      }
+  }
+  
